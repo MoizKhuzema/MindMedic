@@ -2,6 +2,9 @@
 
 MindMedic is an AI-powered mental health diagnostic assistant built using FLAN-T5 and LangChain. It helps users understand potential mental health concerns by providing evidence-based information and preliminary insights based on trusted mental health resources.
 
+![image](https://github.com/user-attachments/assets/d718b1a8-8936-4996-b8aa-d86b44ad49af)
+
+
 ## Table of Contents
 
 - [MindMedic - AI Mental Health Assistant 🧠](#mindmedic---ai-mental-health-assistant-)
