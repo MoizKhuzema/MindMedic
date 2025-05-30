@@ -1,104 +1,106 @@
+# MindMedic - AI Mental Health Assistant 🧠
 
-
-# Llama2 Medical Bot
-
-The Llama2 Medical Bot is a powerful tool designed to provide medical information by answering user queries using state-of-the-art language models and vector stores. This README will guide you through the setup and usage of the Llama2 Medical Bot.
+MindMedic is an AI-powered mental health diagnostic assistant built using FLAN-T5 and LangChain. It helps users understand potential mental health concerns by providing evidence-based information and preliminary insights based on trusted mental health resources.
 
 ## Table of Contents
 
-- [Introduction](#langchain-medical-bot)
-- [Table of Contents](#table-of-contents)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [MindMedic - AI Mental Health Assistant 🧠](#mindmedic---ai-mental-health-assistant-)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Features](#features)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Important Note](#important-note)
+    - [Emergency Resources:](#emergency-resources)
+  - [Contributing](#contributing)
+
+## Introduction
+
+MindMedic leverages advanced language models and vector stores to provide informative responses to mental health-related queries. It processes and understands a curated collection of mental health resources to offer reliable, evidence-based information about various mental health conditions, symptoms, and general mental wellness topics.
+
+## Features
+
+- 🤖 Powered by Google's FLAN-T5 language model
+- 📚 Knowledge base built from trusted mental health resources
+- 💡 Provides evidence-based responses with sources
+- 🔍 Semantic search capabilities for accurate information retrieval
+- 💻 User-friendly chat interface powered by Chainlit
+- 🔒 Runs locally for privacy
 
 ## Prerequisites
 
-Before you can start using the Llama2 Medical Bot, make sure you have the following prerequisites installed on your system:
+Before setting up MindMedic, ensure you have:
 
 - Python 3.6 or higher
-- Required Python packages (you can install them using pip):
-    - langchain
-    - chainlit
-    - sentence-transformers
-    - faiss
-    - PyPDF2 (for PDF document loading)
+- pip (Python package manager)
+- 4GB+ RAM recommended
+- CPU with x86_64 architecture
 
 ## Installation
 
-1. Clone this repository to your local machine.
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/MindMedic.git
+   cd MindMedic
+   ```
 
-    ```bash
-    git clone https://github.com/your-username/langchain-medical-bot.git
-    cd langchain-medical-bot
-    ```
+2. Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   # On Windows
+   venv\Scripts\activate
+   # On Unix or MacOS
+   source venv/bin/activate
+   ```
 
-2. Create a Python virtual environment (optional but recommended):
+3. Install required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows, use: venv\Scripts\activate
-    ```
-
-3. Install the required Python packages:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4. Download the required language models and data. Please refer to the Langchain documentation for specific instructions on how to download and set up the language model and vector store.
-
-5. Set up the necessary paths and configurations in your project, including the `DB_FAISS_PATH` variable and other configurations as per your needs.
-
-## Getting Started
-
-To get started with the Llama2 Medical Bot, you need to:
-
-1. Set up your environment and install the required packages as described in the Installation section.
-
-2. Configure your project by updating the `DB_FAISS_PATH` variable and any other custom configurations in the code.
-
-3. Prepare the language model and data as per the Langchain documentation.
-
-4. Start the bot by running the provided Python script or integrating it into your application.
+4. Prepare the knowledge base:
+   ```bash
+   python ingest.py
+   ```
 
 ## Usage
 
-The Llama2 Medical Bot can be used for answering medical-related queries. To use the bot, you can follow these steps:
+1. Start the MindMedic chatbot:
+   ```bash
+   chainlit run model.py -w
+   ```
 
-1. Start the bot by running your application or using the provided Python script.
+2. Open your web browser and navigate to `http://localhost:8000`
 
-2. Send a medical-related query to the bot.
+3. Start interacting with MindMedic by asking mental health-related questions
 
-3. The bot will provide a response based on the information available in its database.
+Example queries:
+- "What are the common symptoms of anxiety?"
+- "How can I tell if I'm experiencing depression?"
+- "What are some coping strategies for stress?"
+- "Can you explain what panic attacks feel like?"
 
-4. If sources are found, they will be provided alongside the answer.
+## Important Note
 
-5. The bot can be customized to return specific information based on the query and context provided.
+⚠️ **Disclaimer**: MindMedic is an AI assistant designed to provide information and general guidance about mental health topics. It is NOT a replacement for professional mental health care. Always consult with qualified mental health professionals for diagnosis and treatment. In case of emergency, contact your local emergency services or mental health crisis hotline immediately.
+
+### Emergency Resources:
+- National Suicide Prevention Lifeline (US): 988
+- Crisis Text Line: Text HOME to 741741
+- Find local mental health resources: [NAMI HelpLine](https://www.nami.org/help)
 
 ## Contributing
 
-Contributions to the Llama2 Medical Bot are welcome! If you'd like to contribute to the project, please follow these steps:
+Contributions to improve MindMedic are welcome! To contribute:
 
-1. Fork the repository to your own GitHub account.
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
 
-2. Create a new branch for your feature or bug fix.
-
-3. Make your changes and ensure that the code passes all tests.
-
-4. Create a pull request to the main repository, explaining your changes and improvements.
-
-5. Your pull request will be reviewed, and if approved, it will be merged into the main codebase.
-
-## License
-
-This project is licensed under the MIT License.
+Please ensure your contributions align with mental health best practices and maintain the focus on providing accurate, helpful information.
 
 ---
 
-For more information on how to use, configure, and extend the Llama2 Medical Bot, please refer to the Langchain documentation or contact the project maintainers.
-
-Happy coding with Llama2 Medical Bot! 🚀
+Built with ❤️ for mental health awareness and support. Remember, it's okay to not be okay, and seeking help is a sign of strength.

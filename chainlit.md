@@ -1,11 +1,11 @@
-# Welcome to Llama2 Med-Bot! 🚀🤖
+# Welcome to MindMate! 🚀🤖
 
-Hi there, 👋 We're excited to have you on board. This is a powerful bot designed to help you ask queries related to your data/knowledge.
+Hi there, 👋 and welcome to **MindMate**, your AI-powered mental health support assistant. This bot is designed to help you get reliable, evidence-based answers to questions about mental well-being—whether it’s about managing anxiety, coping strategies for stress, or understanding depression.
 
 ## Useful Links 🔗
 
-- **Data:** This is the data which has been used as a knowledge base. [Knowledge Base](https://docs.chainlit.io) 📚
-- **Join AI Anytime Community:** Join our friendly [WhatsApp Group](https://discord.gg/ZThrUxbAYw) to ask questions, share your projects, and connect with other developers! 💬
+- **Knowledge Base:** All the mental health guides, fact sheets, and clinical resources we’ve ingested to power MindMate. Explore our source documents here: [Mental Health Knowledge Base](vectorstore/db_faiss) 📚  
+- **Project Repository:** View the code, contribute enhancements, or report issues on GitHub: [Llama2-Medical-Chatbot](https://github.com/AIAnytime/Llama2-Medical-Chatbot) 💻    
 
-Happy chatting! 💻😊
+Take care of your mind and happy chatting! 🧠😊  
 
