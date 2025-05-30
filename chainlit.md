@@ -5,7 +5,7 @@ Hi there, 👋 and welcome to **MindMate**, your AI-powered mental health suppor
 ## Useful Links 🔗
 
 - **Knowledge Base:** All the mental health guides, fact sheets, and clinical resources we’ve ingested to power MindMate. Explore our source documents here: [Mental Health Knowledge Base](vectorstore/db_faiss) 📚  
-- **Project Repository:** View the code, contribute enhancements, or report issues on GitHub: [Llama2-Medical-Chatbot](https://github.com/AIAnytime/Llama2-Medical-Chatbot) 💻    
+- **Project Repository:** View the code, contribute enhancements, or report issues on GitHub: [MindMedic-Chatbot](https://github.com/MoizKhuzema/MindMedic/edit/main/chainlit.md) 💻    
 
 Take care of your mind and happy chatting! 🧠😊  
 
