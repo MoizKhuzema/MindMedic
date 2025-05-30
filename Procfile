@@ -1,1 +1,0 @@
-web: chainlit run model.py -h --port $PORT 
