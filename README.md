@@ -4,6 +4,7 @@ MindMedic is an AI-powered mental health diagnostic assistant built using FLAN-T
 
 ![image](https://github.com/user-attachments/assets/d718b1a8-8936-4996-b8aa-d86b44ad49af)
 
+Hosted live at: https://huggingface.co/spaces/MoizK/MindMedic
 
 ## Table of Contents
 
